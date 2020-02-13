@@ -4,7 +4,6 @@ def model_v1():
     model = tf.keras.Sequential()
     model.add(tf.keras.layers.Dense(units = 32, input_dim = 4, activation = 'relu', dtype = tf.float32))
     model.add(tf.keras.layers.Dense(units = 2, activation = 'softmax', dtype = tf.float32))
-    model.build()
     return model
 
 def model_v2():

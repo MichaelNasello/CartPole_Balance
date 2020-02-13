@@ -5,9 +5,10 @@ import os
 
 def run(model_version):
     """
+    Runs an instance of OpenAI Gym's Cartpole-v1 environment and uses a trained policy model to balance the pole
 
-    :param model_version:
-    :return:
+    :param model_version: str. Specifies which trained model to use.
+    :return: None
     """
 
     # input checks
