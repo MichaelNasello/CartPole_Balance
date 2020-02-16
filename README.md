@@ -9,7 +9,7 @@ If you have any questions/concerns, don't hesistate to reach out to me at <a hre
 
 ## Problem
 
-The goal of this project is develop a policy the CartPole can follow so that it stands upright. At each time step, OpenAI Gym provides the cart's position, angle, velocity, and angular velocity. It is our job to use this information to determine what action should be taken that will maximize the probability that the CartPole remains standing upright. Possible actions are moving left or right. 
+The goal of this project was to develop a policy the CartPole can follow so that it stands upright. At each time step, OpenAI Gym provides the cart's position, angle, velocity, and angular velocity. It is our job to use this information to determine what action should be taken that will maximize the probability that the CartPole remains standing upright. Possible actions are moving left or right. 
 
 ## Approach
 
@@ -17,7 +17,7 @@ Reinforcement Learning was used to solve this problem. This concept is synonymou
     
     If a dog behaves, they receive a treat; if they misbehave, you put them in their cage. After time, the dog figures out what is considered good/bad behaviour based off of the consequences.
     
-This approach can be used to our advantage when training AI. The reinforcement environment consists of four entities:
+This approach can be used to our advantage when training AI. The reinforcement learning application consists of four entities:
 
     1. The environment (OpenAI Gym / Your house)
     2. The agent (CartPole / The dog)
@@ -36,7 +36,7 @@ For example, if the CartPole is currently travelling to the left, it is preferab
 
 ### So our loss function attempts to minimize that difference. How are rewards used?
 
-We multiply our gradients by the rewards. When performing gradient descent, positive rewards (agent did something right) will cause the optimizer to descend down the vector space. The opposite is true for negative rewards (agent did something wrong). This process has the effect of 'learning' what the appropriate actions to take are, given a state from the environment.
+We multiply our gradients by the rewards. When performing Back Propagation, positive rewards (agent did something right) will cause the optimizer to descend down the vector space. The opposite is true for negative rewards (agent did something wrong). This process has the effect of 'learning' what the appropriate actions to take are, given a state from the environment.
 
 ### The Credit Assignment Problem
 
@@ -61,9 +61,9 @@ The final design, model_v5, consisted of the following:
 
 ## Results
 
-After 5 iterations of the model architecture, a policy model was trained that converged and was able to survive in the environment. The program was manually stopped at 15,000 steps (about 5 minutes). It took 900 episodes of training to reach this point. Below is a video showing the agents progress throughout the training loop.
+After 5 iterations of the model architecture, a policy model was trained that converged and was able to survive in the environment. The program was manually stopped at 15,000 steps (about 5 minutes). It took 900 episodes of training to reach this point. Below is a video showing the agent's progress throughout the training loop.
 
-A video is available for viewing at <a href = "michaelnasello.ca">michaelnasello.ca<a>
+A video is available for viewing at <a href = "michaelnasello.ca/#featuredwork">michaelnasello.ca<a>
 
 ## Acknowledgements
 
